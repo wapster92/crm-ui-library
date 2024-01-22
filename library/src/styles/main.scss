@@ -1,0 +1,101 @@
+@forward './abstracts/mixins';
+@forward './abstracts/variables';
+@forward './abstracts/functions';
+@import './packages/element';
+@import './packages/element-notification';
+@import './packages/element-transition';
+@import './base/colors';
+@import './base/colors-global';
+@import './base/border-radius';
+@import './base/border-radius-global';
+@import './base/typography';
+@import './base/normalize';
+@import './base/fonts';
+@import './base/transition';
+
+
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  margin: 0;
+  appearance: none;
+}
+
+input[type='number'] {
+  appearance: textfield;
+}
+
+body {
+  width: auto !important;
+}
+
+.container {
+  width: 100%;
+  max-width: 1168px;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  @media (width <= 1024px) {
+    padding: 8px 12px;
+  }
+}
+
+a {
+  color: var(--accent-blue-light-1);
+  font: var(--caption);
+  text-decoration: none;
+  transition: var(--transition-03);
+
+  &:hover,
+  &:active {
+    color: var(--accent-blue-base);
+  }
+}
+
+.link {
+  color: var(--accent-blue-light-1);
+  font: var(--caption);
+  text-decoration: none;
+  cursor: pointer;
+  transition: var(--transition-03);
+
+  &:hover,
+  &:active {
+    color: var(--accent-blue-base);
+  }
+
+  &--grey {
+    color: var(--system-3);
+    text-decoration: underline;
+
+    &:hover,
+    &:active {
+      color: var(--system-2);
+      text-decoration: none;
+    }
+  }
+}
+
+.dashed-text {
+  border-bottom: 2px dashed var(--accent-blue-light-1);
+}
+
+.vfm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

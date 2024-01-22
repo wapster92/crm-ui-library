@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "types": ["vue", "vue-i18n", "vitest/globals"],
+    "baseUrl": "."
+  },
+  "include": ["env.d.ts", "src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
+  "exclude": ["node_modules", "dist", "**/*.story.vue", "**/*.spec.ts"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}

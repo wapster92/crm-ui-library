@@ -1,0 +1,368 @@
+:root {
+  /* Neutral */
+  --neutral-background-1-rest: var(--colors-grey-16);
+  --neutral-background-1-hover: var(--colors-grey-24);
+  --neutral-background-1-pressed: var(--colors-grey-12);
+  --neutral-background-1-selected: var(--colors-grey-22);
+
+  --neutral-background-2-rest: var(--colors-grey-12);
+  --neutral-background-2-hover: var(--colors-grey-20);
+  --neutral-background-2-pressed: var(--colors-grey-8);
+  --neutral-background-2-selected: var(--colors-grey-18);
+
+  --neutral-background-3-rest: var(--colors-grey-8);
+  --neutral-background-3-hover: var(--colors-grey-16);
+  --neutral-background-3-pressed: var(--colors-grey-4);
+  --neutral-background-3-selected: var(--colors-grey-14);
+
+  --neutral-background-4-rest: var(--colors-grey-4);
+  --neutral-background-4-hover: var(--colors-grey-12);
+  --neutral-background-4-pressed: var(--colors-grey-black);
+  --neutral-background-4-selected: var(--colors-grey-10);
+
+  --neutral-background-5-rest: var(--colors-grey-black);
+  --neutral-background-5-hover: var(--colors-grey-8);
+  --neutral-background-5-pressed: var(--colors-grey-2);
+  --neutral-background-5-selected: var(--colors-grey-6);
+
+  --neutral-background-6-rest: var(--colors-grey-20);
+
+  --neutral-background-inverted-rest: var(--colors-grey-white);
+  --neutral-background-inverted-disabled: rgb(255 255 255 / 10%);
+  --neutral-background-alpha-1-rest: rgb(26 26 26 / 50%);
+  --neutral-background-alpha-2-rest: rgb(31 31 31 / 70%);
+  --neutral-background-static-rest: var(--colors-grey-24);
+
+  --neutral-background-subtle-rest: rgb(0 0 0 / 0%);
+  --neutral-background-subtle-hover: var(--colors-grey-22);
+  --neutral-background-subtle-pressed: var(--colors-grey-18);
+  --neutral-background-subtle-selected: var(--colors-grey-20);
+
+  --neutral-background-subtle-light-alpha-hover: rgb(36 36 36 / 80%);
+  --neutral-background-subtle-light-alpha-pressed: rgb(36 36 36 / 50%);
+  --neutral-background-subtle-light-alpha-selected: rgb(0 0 0 / 0%);
+
+  --neutral-background-subtle-inverted-rest: rgb(0 0 0 / 0%);
+  --neutral-background-subtle-inverted-hover: rgb(0 0 0 / 10%);
+  --neutral-background-subtle-inverted-pressed: rgb(0 0 0 / 30%);
+  --neutral-background-subtle-inverted-selected: rgb(0 0 0 / 20%);
+
+  --neutral-background-transparent-rest: rgb(0 0 0 / 0%);
+  --neutral-background-transparent-hover: rgb(0 0 0 / 0%);
+  --neutral-background-transparent-pressed: rgb(0 0 0 / 0%);
+  --neutral-background-transparent-selected: rgb(0 0 0 / 0%);
+
+  --neutral-background-disabled-rest: var(--colors-grey-8);
+  --neutral-background-stencil-1-rest: var(--colors-grey-34);
+  --neutral-background-stencil-2-rest: var(--colors-grey-20);
+  --neutral-background-overlay-rest: rgb(0 0 0 / 50%);
+  --neutral-background-overlay-scrollbar-rest: rgb(255 255 255 / 60%);
+
+  --neutral-foreground-1-rest: var(--colors-grey-white);
+  --neutral-foreground-1-hover: var(--colors-grey-white);
+  --neutral-foreground-1-pressed: var(--colors-grey-white);
+  --neutral-foreground-1-selected: var(--colors-grey-white);
+
+  --neutral-foreground-2-rest: var(--colors-grey-84);
+  --neutral-foreground-2-hover: var(--colors-grey-white);
+  --neutral-foreground-2-pressed: var(--colors-grey-white);
+  --neutral-foreground-2-selected: var(--colors-grey-white);
+
+  --neutral-foreground-2-brand-hover: var(--colors-brand-100);
+  --neutral-foreground-2-brand-pressed: var(--colors-brand-90);
+  --neutral-foreground-2-brand-selected: var(--colors-brand-100);
+
+  --neutral-foreground-2-link-rest: var(--colors-grey-84);
+  --neutral-foreground-2-link-hover: var(--colors-grey-white);
+  --neutral-foreground-2-link-pressed: var(--colors-grey-white);
+  --neutral-foreground-2-link-selected: var(--colors-grey-white);
+
+  --neutral-foreground-3-rest: var(--colors-grey-68);
+  --neutral-foreground-3-hover: var(--colors-grey-84);
+  --neutral-foreground-3-pressed: var(--colors-grey-84);
+  --neutral-foreground-3-selected: var(--colors-grey-84);
+
+  --neutral-foreground-3-brand-hover: var(--colors-brand-100);
+  --neutral-foreground-3-brand-pressed: var(--colors-brand-90);
+  --neutral-foreground-3-brand-selected: var(--colors-brand-100);
+
+  --neutral-foreground-4-rest: var(--colors-grey-60);
+  --neutral-foreground-4-disabled-rest: var(--colors-grey-36);
+  --neutral-foreground-4-static-rest: var(--colors-grey-14);
+  --neutral-foreground-4-static-inverted-rest: var(--colors-grey-white);
+  --neutral-foreground-4-static-inverted-disabled-rest: rgb(255 255 255 / 40%);
+
+  --neutral-foreground-inverted-1-rest: var(--colors-grey-14);
+  --neutral-foreground-inverted-1-hover: var(--colors-grey-14);
+  --neutral-foreground-inverted-1-pressed: var(--colors-grey-14);
+  --neutral-foreground-inverted-1-selected: var(--colors-grey-14);
+
+  --neutral-foreground-inverted-2-rest: var(--colors-grey-14);
+
+  --neutral-foreground-inverted-link-rest: var(--colors-grey-white);
+  --neutral-foreground-inverted-link-hover: var(--colors-grey-white);
+  --neutral-foreground-inverted-link-pressed: var(--colors-grey-white);
+  --neutral-foreground-inverted-link-selected: var(--colors-grey-white);
+
+  --neutral-foreground-on-brand-rest: var(--colors-grey-white);
+
+  --neutral-stroke-1-rest: var(--colors-grey-40);
+  --neutral-stroke-1-hover: var(--colors-grey-46);
+  --neutral-stroke-1-pressed: var(--colors-grey-42);
+  --neutral-stroke-1-selected: var(--colors-grey-44);
+
+  --neutral-stroke-2-rest: var(--colors-grey-32);
+  --neutral-stroke-3-rest: var(--colors-grey-24);
+  --neutral-stroke-alpha-1-rest: rgb(255 255 255 / 10%);
+  --neutral-stroke-alpha-2-rest: rgb(255 255 255 / 20%);
+  --neutral-stroke-subtle-rest: var(--colors-grey-4);
+  --neutral-stroke-on-brand-1-rest: var(--colors-grey-white);
+
+  --neutral-stroke-on-brand-2-rest: var(--colors-grey-white);
+  --neutral-stroke-on-brand-2-hover: var(--colors-grey-white);
+  --neutral-stroke-on-brand-2-pressed: var(--colors-grey-white);
+  --neutral-stroke-on-brand-2-selected: var(--colors-grey-white);
+
+  --neutral-stroke-accessible-rest: var(--colors-grey-68);
+  --neutral-stroke-accessible-hover: var(--colors-grey-74);
+  --neutral-stroke-accessible-pressed: var(--colors-grey-70);
+  --neutral-stroke-accessible-selected: var(--colors-brand-100);
+
+  --neutral-stroke-focus-1-rest: rgb(0 0 0 / 100%);
+  --neutral-stroke-focus-2-rest: var(--colors-grey-white);
+
+  --neutral-stroke-transparent-rest: rgb(255 255 255 / 0%);
+  --neutral-stroke-transparent-interactive-rest: rgb(255 255 255 / 0%);
+  --neutral-stroke-transparent-disabled-rest: rgb(255 255 255 / 0%);
+  --neutral-stroke-disabled-rest: var(--colors-grey-26);
+  --neutral-stroke-disabled-inverted-rest: rgb(255 255 255 / 40%);
+
+
+  /* Brand */
+  --brand-background-1-rest: var(--colors-brand-70);
+  --brand-background-1-hover: var(--colors-brand-70);
+  --brand-background-1-pressed: var(--colors-brand-40);
+  --brand-background-1-selected: var(--colors-brand-60);
+
+  --brand-background-2-hover: var(--colors-brand-20);
+  --brand-background-2-pressed: var(--colors-brand-40);
+  --brand-background-2-selected: var(--colors-brand-10);
+
+  --brand-background-inverted-rest: var(--colors-grey-white);
+  --brand-background-inverted-hover: var(--colors-brand-160);
+  --brand-background-inverted-pressed: var(--colors-brand-140);
+  --brand-background-inverted-selected: var(--colors-brand-150);
+
+  --brand-background-static-rest: var(--colors-brand-150);
+
+  --brand-background-compound-rest: var(--colors-brand-100);
+  --brand-background-compound-hover: var(--colors-brand-110);
+  --brand-background-compound-pressed: var(--colors-brand-90);
+
+  --brand-foreground-1-rest: var(--colors-brand-100);
+  --brand-foreground-2-rest: var(--colors-brand-110);
+  --brand-foreground-2-hover: var(--colors-brand-130);
+  --brand-foreground-2-pressed: var(--colors-brand-100);
+
+  --brand-foreground-link-rest: var(--colors-brand-100);
+  --brand-foreground-link-hover: var(--colors-brand-110);
+  --brand-foreground-link-pressed: var(--colors-brand-90);
+  --brand-foreground-link-selected: var(--colors-brand-100);
+
+  --brand-foreground-inverted-rest: var(--colors-brand-80);
+  --brand-foreground-inverted-hover: var(--colors-brand-70);
+  --brand-foreground-inverted-pressed: var(--colors-brand-60);
+
+  --brand-foreground-on-light-rest: var(--colors-brand-70);
+  --brand-foreground-on-light-hover: var(--colors-brand-70);
+  --brand-foreground-on-light-pressed: var(--colors-brand-50);
+  --brand-foreground-on-light-selected: var(--colors-brand-60);
+
+  --brand-foreground-compound-rest: var(--colors-brand-100);
+  --brand-foreground-compound-hover: var(--colors-brand-110);
+  --brand-foreground-compound-pressed: var(--colors-brand-90);
+
+  --brand-stroke-1-rest: var(--colors-brand-100);
+  --brand-stroke-2-rest: var(--colors-brand-50);
+  --brand-stroke-2-hover: var(--colors-brand-90);
+  --brand-stroke-2-pressed: var(--colors-brand-70);
+
+  --brand-stroke-2-contrast-rest: var(--colors-brand-50);
+
+  --brand-stroke-compound-rest: var(--colors-brand-100);
+  --brand-stroke-compound-hover: var(--colors-brand-110);
+  --brand-stroke-compound-pressed: var(--colors-brand-90);
+
+
+  /* Status */
+  --status-danger-background-1-rest: #3B0509;
+  --status-danger-background-3-rest: #C50F1F;
+
+  --status-danger-foreground-1-rest: #DC626D;
+  --status-danger-foreground-3-rest: #C50F1F;
+
+  --status-danger-stroke-1-rest: #C50F1F;
+  --status-danger-stroke-2-rest: #DC626D;
+
+  --status-success-background-1-rest: #052505;
+  --status-success-background-3-rest: #052505;
+
+  --status-success-foreground-1-rest: #54B054;
+  --status-success-foreground-3-rest: #9FD89F;
+  --status-success-foreground-inverted-rest: #107C10;
+
+  --status-success-stroke-1-rest: #107C10;
+  --status-success-stroke-2-rest: #9FD89F;
+
+  --status-severe-background-1-rest: #411200;
+  --status-severe-background-3-rest: #DA3B01;
+
+  --status-severe-foreground-1-rest: #E9835E;
+  --status-severe-foreground-3-rest: #E9835E;
+
+  --status-severe-stroke-1-rest: #DA3B01;
+
+  --status-warning-background-1-rest: #4A1E04;
+  --status-warning-background-3-rest: #F7630C;
+
+  --status-warning-foreground-1-rest: #F98845;
+  --status-warning-foreground-2-rest: #FDCFB4;
+
+  --status-warning-stroke-1-rest: #DE590B;
+
+  --status-oof-foreground-3-rest: #D161C4;
+  --status-away-background-3-rest: #EAA300;
+  --status-avaible-foreground-3-rest: #13A10E;
+
+  --status-generic-dark-red-background-2-rest: #590815;
+  --status-generic-dark-red-foreground-2-rest: #D69CA5;
+  --status-generic-dark-red-stroke-active-rest: #962F3F;
+
+  --status-generic-cranberry-background-2-rest: #6E0811;
+  --status-generic-cranberry-foreground-2-rest: #EEACB2;
+  --status-generic-cranberry-stroke-active-rest: #DC626D;
+
+  --status-generic-red-background-2-rest: #751D1F;
+  --status-generic-red-foreground-2-rest: #EEACB2;
+  --status-generic-red-stroke-active-rest: #E37D80;
+
+  --status-generic-pumpkin-background-2-rest: #712D09;
+  --status-generic-pumpkin-foreground-2-rest: #EFC4AD;
+  --status-generic-pumpkin-stroke-active-rest: #DF8E64;
+
+  --status-generic-peach-background-2-rest: #8F4E00;
+  --status-generic-peach-foreground-2-rest: #FFDDB3;
+  --status-generic-peach-stroke-active-rest: #FFBA66;
+
+  --status-generic-marigold-background-2-rest: #835B00;
+  --status-generic-marigold-foreground-2-rest: #F9E2AE;
+  --status-generic-marigold-stroke-active-rest: #F2C661;
+
+  --status-generic-gold-background-2-rest: #6D5700;
+  --status-generic-gold-foreground-2-rest: #ECDFA5;
+  --status-generic-gold-stroke-active-rest: #DAC157;
+
+  --status-generic-brass-background-2-rest: #553E06;
+  --status-generic-brass-foreground-2-rest: #E0CEA2;
+  --status-generic-brass-stroke-active-rest: #C1A256;
+
+  --status-generic-brown-background-2-rest: #50301A;
+  --status-generic-brown-foreground-2-rest: #DDC3B0;
+  --status-generic-brown-stroke-active-rest: #BB8F6F;
+
+  --status-generic-forest-background-2-rest: #294903;
+  --status-generic-forest-foreground-2-rest: #BDD99B;
+  --status-generic-forest-stroke-active-rest: #85B44C;
+
+  --status-generic-seafoam-background-2-rest: #00723B;
+  --status-generic-seafoam-foreground-2-rest: #A8F0CD;
+  --status-generic-seafoam-stroke-active-rest: #5AE0A0;
+
+  --status-generic-dark-green-background-2-rest: #063B06;
+  --status-generic-dark-green-foreground-2-rest: #9AD29A;
+  --status-generic-dark-green-stroke-active-rest: #4DA64D;
+
+  --status-generic-light-teal-background-2-rest: #00666D;
+  --status-generic-light-teal-foreground-2-rest: #A6E9ED;
+  --status-generic-light-teal-stroke-active-rest: #58D3DB;
+
+  --status-generic-teal-background-2-rest: #02494C;
+  --status-generic-teal-foreground-2-rest: #9BD9DB;
+  --status-generic-teal-stroke-active-rest: #4CB4B7;
+
+  --status-generic-steal-background-2-rest: #00333F;
+  --status-generic-steal-foreground-2-rest: #00333F;
+  --status-generic-steal-stroke-active-rest: #4496A9;
+
+  --status-generic-blue-background-2-rest: #004377;
+  --status-generic-blue-foreground-2-rest: #A9D3F2;
+  --status-generic-blue-stroke-active-rest: #5CAAE5;
+
+  --status-generic-royal-blue-background-2-rest: #002C4E;
+  --status-generic-royal-blue-foreground-2-rest: #9ABFDC;
+  --status-generic-royal-blue-stroke-active-rest: #4A89BA;
+
+  --status-generic-cornflower-background-2-rest: #2C3C85;
+  --status-generic-cornflower-foreground-2-rest: #C8D1FA;
+  --status-generic-cornflower-stroke-active-rest: #93A4F4;
+
+  --status-generic-navy-background-2-rest: #001665;
+  --status-generic-navy-foreground-2-rest: #A3B2E8;
+  --status-generic-navy-stroke-active-rest: #546FD2;
+
+  --status-generic-lavender-background-2-rest: #3F3682;
+  --status-generic-lavender-foreground-2-rest: #D2CCF8;
+  --status-generic-lavender-stroke-active-rest: #A79CF1;
+
+  --status-generic-purple-background-2-rest: #341A51;
+  --status-generic-purple-foreground-2-rest: #C6B1DE;
+  --status-generic-purple-stroke-active-rest: #9470BD;
+
+  --status-generic-grape-background-2-rest: #4C0D55;
+  --status-generic-grape-foreground-2-rest: #D9A7E0;
+  --status-generic-grape-stroke-active-rest: #B55FC1;
+
+  --status-generic-lilac-background-2-rest: #63276D;
+  --status-generic-lilac-foreground-2-rest: #E6BFED;
+  --status-generic-lilac-stroke-active-rest: #CF87DA;
+
+  --status-generic-pink-background-2-rest: #80215D;
+  --status-generic-pink-foreground-2-rest: #F7C0E3;
+  --status-generic-pink-stroke-active-rest: #EF85C8;
+
+  --status-generic-magenta-background-2-rest: #6B0043;
+  --status-generic-magenta-foreground-2-rest: #ECA5D1;
+  --status-generic-magenta-stroke-active-rest: #D957A8;
+
+  --status-generic-plum-background-2-rest: #5B003B;
+  --status-generic-plum-foreground-2-rest: #D696C0;
+  --status-generic-plum-stroke-active-rest: #D957A8;
+
+  --status-generic-beige-background-2-rest: #444241;
+  --status-generic-beige-foreground-2-rest: #D7D4D4;
+  --status-generic-beige-stroke-active-rest: #AFABAA;
+
+  --status-generic-mink-background-2-rest: #343231;
+  --status-generic-mink-foreground-2-rest: #CECCCB;
+  --status-generic-mink-stroke-active-rest: #9E9B99;
+
+  --status-generic-platinum-background-2-rest: #3B4447;
+  --status-generic-platinum-foreground-2-rest: #CDD6D8;
+  --status-generic-platinum-stroke-active-rest: #A0ADB2;
+
+  --status-generic-anchor-background-2-rest: #202427;
+  --status-generic-anchor-foreground-2-rest: #BCC3C7;
+  --status-generic-anchor-stroke-active-rest: #808A90;
+
+
+  /* Shadow */
+  --shadow-ambient: rgb(0 0 0 / 24%);
+  --shadow-ambient-lighter: rgb(0 0 0 / 12%);
+  --shadow-ambient-darker: rgb(0 0 0 / 40%);
+  --shadow-ambient-brand: rgb(0 0 0 / 30%);
+
+  --shadow-key: rgb(0 0 0 / 28%);
+  --shadow-key-lighter: rgb(0 0 0 / 14%);
+  --shadow-key-darker: rgb(0 0 0 / 48%);
+  --shadow-key-brand: rgb(0 0 0 / 25%);
+}

@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+cd library
+npm run lint:check

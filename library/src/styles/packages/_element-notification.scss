@@ -1,0 +1,70 @@
+.notify {
+    --el-bg-color-overlay: var(--additional-notification-info);
+    --el-notification-shadow: 0 2px 6px 0 rgb(28 28 28 / 40%);
+    --el-notification-width: 296px;
+    --el-notification-padding: 12px 40px 12px 12px;
+    --el-notification-border-color: 1px solid var(--additional-transparent-darkgrey-50);
+
+    .el-notification__group {
+        margin: 0;
+    }
+
+    .el-notification__closeBtn {
+        top: 0;
+        right: 0;;
+        width: calc(12px * 2 + 14px);
+        height: calc(12px * 2 + 14px);
+        padding: 12px;
+    }
+
+    .el-notification__title {
+        font: var(--body-strong);
+    }
+
+    .el-notification__content {
+        font: var(--body);
+        text-align: left;
+    }
+
+    .el-notification__icon {
+        width: 16px;
+        height: 16px;
+        margin-top: 2px;
+    }
+
+    &--icon {
+        .el-notification__group {
+            margin-left: 8px;
+        }
+    }
+
+    &--error {
+        --el-bg-color-overlay: var(--additional-notification-error);
+
+        .el-notification__icon {
+            --el-notification-icon-color: var(--accent-red-light);
+        }
+    }
+
+    &--success {
+        --el-bg-color-overlay: var(--additional-notification-success);
+
+        .el-notification__icon {
+            --el-notification-icon-color: var(--accent-green-light);
+        }
+    }
+
+    &--warning {
+        --el-bg-color-overlay: var(--additional-notification-warning);
+
+        .el-notification__icon {
+            --el-notification-icon-color: var(--accent-yellow);
+        }
+    }
+
+    &--info {
+        .el-notification__icon {
+            --el-notification-icon-color: var(--accent-blue-light-1);
+        }
+    }
+}

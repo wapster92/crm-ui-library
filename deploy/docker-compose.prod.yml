@@ -1,0 +1,24 @@
+version: "3.9"
+
+
+services:
+  front:
+    image: ${REGISTRY_REPOSITORY}/app:latest
+
+    deploy:
+      placement:
+        constraints:
+          - node.labels.worker == true
+          - node.labels.env_type == ${ENV_TYPE}
+
+      restart_policy:
+        condition: any
+
+    networks:
+      hub:
+
+
+networks:
+  hub:
+    name: hub_${ENV_TYPE}
+    external: true
